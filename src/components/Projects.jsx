@@ -5,6 +5,8 @@ import { projects } from '../data'
 import { skillConfig } from '../data/skillConfig'
 import { useLanguage } from '../context/LanguageContext'
 
+const imgUrl = (path) => import.meta.env.BASE_URL + path.replace(/^\//, '')
+
 const techDefault = {
   color: '#a1a1aa',
   bgColor: 'rgba(161,161,170,0.1)',
@@ -47,7 +49,7 @@ function ProjectCard({ project, index, isInView, onClick }) {
     >
       <div className="relative h-48 md:h-56 overflow-hidden">
         <motion.img
-          src={project.image}
+          src={imgUrl(project.image)}
           alt={project.title}
           className="w-full h-full object-cover"
           whileHover={{ scale: 1.1 }}
@@ -122,7 +124,7 @@ function ProjectModal({ project, onClose }) {
           <div className="absolute inset-0 bg-surface" />
           <motion.img
             key={currentImg}
-            src={images[currentImg]}
+            src={imgUrl(images[currentImg])}
             alt={`${project.title} ${currentImg + 1}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
