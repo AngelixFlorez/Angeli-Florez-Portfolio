@@ -31,7 +31,7 @@ const translations = {
     skills: { title: 'Technical', highlight: 'expertise', label: 'Skills', subtitle: 'A comprehensive toolkit spanning frontend, backend, creative technologies, and cloud infrastructure.' },
     projects: { label: 'Projects', title: 'Selected', highlight: 'work', subtitle: 'A curated selection of projects that showcase my expertise in building high-performance, visually compelling digital experiences.', problem: 'Problem', result: 'Result', demo: 'Live Demo', repo: 'Repository' },
     education: { label: 'Education', subtitle: 'Academic background and professional development' },
-    contact: { label: 'Contact', title: "Let's create something", highlight: 'amazing', subtitle: "Have a project in mind or just want to connect? I'd love to hear from you. Let's build something extraordinary together.", findMe: 'Find me on', name: 'Name', email: 'Email', message: 'Message', send: 'Send Message', sending: 'Sending...', success: 'Message Sent!', yourName: 'Your name', yourEmail: 'Your email', yourMessage: 'Your message...', subject: 'Subject' },
+    contact: { label: 'Contact', title: "Let's create something", highlight: 'amazing', subtitle: "Have a project in mind or just want to connect? I'd love to hear from you. Let's build something extraordinary together.", findMe: 'Find me on', name: 'Name', email: 'Email', message: 'Message', send: 'Send Message', sending: 'Sending...', success: 'Message Sent!', error: 'Error - Try Again', yourName: 'Your name', yourEmail: 'Your email', yourMessage: 'Your message...', subject: 'Subject' },
     footer: { rights: 'All rights reserved.', back: 'Back to top' },
     loading: {
       text: 'Loading',
@@ -72,7 +72,7 @@ const translations = {
     skills: { title: 'Experiencia', highlight: 'técnica', label: 'Habilidades', subtitle: 'Un conjunto completo de herramientas que abarca frontend, backend, tecnologías creativas e infraestructura en la nube.' },
     projects: { label: 'Proyectos', title: 'Trabajo', highlight: 'seleccionado', subtitle: 'Una selección curada de proyectos que muestran mi experiencia en la creación de experiencias digitales de alto rendimiento y visualmente atractivas.', problem: 'Problema', result: 'Resultado', demo: 'Demo en Vivo', repo: 'Repositorio' },
     education: { label: 'Educación', subtitle: 'Formación académica y desarrollo profesional' },
-    contact: { label: 'Contacto', title: 'Creemos algo', highlight: 'increíble', subtitle: '¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti. Construyamos algo extraordinario juntos.', findMe: 'Encuéntrame en', name: 'Nombre', email: 'Correo', message: 'Mensaje', send: 'Enviar Mensaje', sending: 'Enviando...', success: '¡Mensaje Enviado!', yourName: 'Tu nombre', yourEmail: 'Tu correo', yourMessage: 'Tu mensaje...', subject: 'Asunto' },
+    contact: { label: 'Contacto', title: 'Creemos algo', highlight: 'increíble', subtitle: '¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti. Construyamos algo extraordinario juntos.', findMe: 'Encuéntrame en', name: 'Nombre', email: 'Correo', message: 'Mensaje', send: 'Enviar Mensaje', sending: 'Enviando...', success: '¡Mensaje Enviado!', error: 'Error - Intenta de Nuevo', yourName: 'Tu nombre', yourEmail: 'Tu correo', yourMessage: 'Tu mensaje...', subject: 'Asunto' },
     footer: { rights: 'Todos los derechos reservados.', back: 'Volver arriba' },
     loading: {
       text: 'Cargando',
@@ -113,7 +113,7 @@ const translations = {
     skills: { title: 'Expertise', highlight: 'technique', label: 'Compétences', subtitle: 'Une boîte à outils complète couvrant le frontend, le backend, les technologies créatives et l\'infrastructure cloud.' },
     projects: { label: 'Projets', title: 'Travail', highlight: 'sélectionné', subtitle: 'Une sélection de projets qui démontrent mon expertise dans la création d\'expériences numériques performantes et visuellement captivantes.', problem: 'Problème', result: 'Résultat', demo: 'Démo en Direct', repo: 'Dépôt' },
     education: { label: 'Formation', subtitle: 'Formation académique et développement professionnel' },
-    contact: { label: 'Contact', title: 'Créons quelque chose', highlight: 'd\'incroyable', subtitle: 'Vous avez un projet en tête ou vous souhaitez simplement échanger ? Je serais ravi de vous entendre. Construisons ensemble quelque chose d\'extraordinaire.', findMe: 'Retrouvez-moi sur', name: 'Nom', email: 'Email', message: 'Message', send: 'Envoyer', sending: 'Envoi...', success: 'Message Envoyé !', yourName: 'Votre nom', yourEmail: 'Votre email', yourMessage: 'Votre message...', subject: 'Sujet' },
+    contact: { label: 'Contact', title: 'Créons quelque chose', highlight: 'd\'incroyable', subtitle: 'Vous avez un projet en tête ou vous souhaitez simplement échanger ? Je serais ravi de vous entendre. Construisons ensemble quelque chose d\'extraordinaire.', findMe: 'Retrouvez-moi sur', name: 'Nom', email: 'Email', message: 'Message', send: 'Envoyer', sending: 'Envoi...', success: 'Message Envoyé !', error: 'Erreur - Réessayez', yourName: 'Votre nom', yourEmail: 'Votre email', yourMessage: 'Votre message...', subject: 'Sujet' },
     footer: { rights: 'Tous droits réservés.', back: 'Retour en haut' },
     loading: {
       text: 'Chargement',

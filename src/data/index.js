@@ -1,10 +1,9 @@
 export const personalInfo = {
   name: 'Angeli Florez',
-  role: 'Full-Stack Developer & Creative Technologist',
   tagline: 'Turning complex problems into elegant, high-impact digital experiences',
   description: 'I craft high-performance web applications with meticulous attention to interaction design, animation, and user experience.',
   email: 'angelixflorez@gmail.com',
-  location: 'Lima, Peru',
+  location: 'Bogotá, Colombia',
   social: {
     github: 'https://github.com/AngelixFlorez',
     linkedin: 'https://www.linkedin.com/in/angelixflorez/',

@@ -25,3 +25,8 @@ dist-ssr
 
 # Personal
 public/infoprojects.txt
+
+# Environment variables
+.env
+.env.local
+.env.production

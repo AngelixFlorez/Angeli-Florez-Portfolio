@@ -1,14 +1,16 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Send, CheckCircle, Loader2, Mail, MapPin } from 'lucide-react'
+import { Send, CheckCircle, Loader2, MapPin } from 'lucide-react'
 import { personalInfo } from '../data'
 import SocialDock from './SocialDock'
 import { useLanguage } from '../context/LanguageContext'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const { t } = useLanguage()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const formRef = useRef(null)
   const [formState, setFormState] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState('idle')
 
@@ -19,12 +21,23 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
-    await new Promise((r) => setTimeout(r, 2000))
-    setStatus('success')
-    setTimeout(() => {
-      setStatus('idle')
-      setFormState({ name: '', email: '', message: '' })
-    }, 3000)
+
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      setStatus('success')
+      setTimeout(() => {
+        setStatus('idle')
+        setFormState({ name: '', email: '', message: '' })
+      }, 3000)
+    } catch {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 3000)
+    }
   }
 
   return (
@@ -67,12 +80,6 @@ export default function Contact() {
               className="space-y-4 mb-10"
             >
               <div className="flex items-center gap-3 text-sm text-text-secondary">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-primary" />
-                </div>
-                <span>{personalInfo.email}</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-text-secondary">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-accent" />
                 </div>
@@ -95,7 +102,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
               {['name', 'email', 'message'].map((field) => (
                 <div key={field} className="relative group">
                   <label className="block text-sm font-medium text-text-secondary mb-2 capitalize group-focus-within:text-primary transition-colors">
@@ -152,6 +159,11 @@ export default function Contact() {
                   >
                     <CheckCircle className="w-5 h-5" /> {t('contact', 'success')}
                   </motion.span>
+                )}
+                {status === 'error' && (
+                  <span className="flex items-center gap-2">
+                    {t('contact', 'error')}
+                  </span>
                 )}
                 {status === 'idle' && (
                   <>
