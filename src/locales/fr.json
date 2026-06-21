@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "ÉTUDIANT",
+    "career": "Génie Informatique",
+    "tagline": "Transformer des problèmes complexes en expériences numériques élégantes à fort impact",
+    "explore": "Explorer mon Travail",
+    "opportunities": "Disponible pour opportunités",
+    "contact": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "label": "À Propos",
+    "heading1": "Transformer des idées en",
+    "heading2": "réalité numérique",
+    "sp1Label": "Architecture Full-Stack",
+    "sp1Desc": "Systèmes évolutifs avec des piles modernes frontend & backend",
+    "sp2Label": "Développement Créatif",
+    "sp2Desc": "Expériences web 3D et design de mouvement avancé",
+    "sp3Label": "Conception de Systèmes",
+    "sp3Desc": "Architectures distribuées haute performance",
+    "sp4Label": "Ingénierie UI",
+    "sp4Desc": "Développement axé sur le design avec une précision parfaite",
+    "para1": "Avec plus de 5 ans d'expérience en développement logiciel, je transforme des idées en solutions numériques puissantes. Mon parcours va de la construction d'architectures backend évolutives à la création d'expériences frontend inmersives que les utilisateurs adorent.",
+    "para2": "Je crois que la technologie doit être à la fois puissante et belle. Chaque ligne de code est une opportunité de créer quelque chose qui non seulement fonctionne parfaitement, mais qui apporte aussi joie et intuition à ceux qui interagissent avec elle.",
+    "para3": "Actuellement, j'explore les frontières des graphiques 3D basés sur le web, des interfaces alimentées par l'IA et des expériences collaboratives en temps réel qui repoussent les limites du navigateur.",
+    "philosophy": "Le code est de la poésie en mouvement. Chaque fonction, composant et pixel est un coup de pinceau dans un chef-d'œuvre plus vaste d'artisanat numérique."
+  },
+  "skills": {
+    "title": "Expertise",
+    "highlight": "technique",
+    "label": "Compétences",
+    "subtitle": "Une boîte à outils complète couvrant le frontend, le backend, les technologies créatives et l'infrastructure cloud."
+  },
+  "projects": {
+    "label": "Projets",
+    "title": "Travail",
+    "highlight": "sélectionné",
+    "subtitle": "Une sélection de projets qui démontrent mon expertise dans la création d'expériences numériques performantes et visuellement captivantes.",
+    "problem": "Problème",
+    "result": "Résultat",
+    "demo": "Démo en Direct",
+    "repo": "Dépôt"
+  },
+  "education": {
+    "label": "Formation",
+    "subtitle": "Formation académique et développement professionnel"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Créons quelque chose",
+    "highlight": "d'incroyable",
+    "subtitle": "Vous avez un projet en tête ou vous souhaitez simplement échanger ? Je serais ravi de vous entendre. Construisons ensemble quelque chose d'extraordinaire.",
+    "findMe": "Retrouvez-moi sur",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi...",
+    "success": "Message Envoyé !",
+    "error": "Erreur - Réessayez",
+    "yourName": "Votre nom",
+    "yourEmail": "Votre email",
+    "yourMessage": "Votre message...",
+    "subject": "Sujet"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "back": "Retour en haut"
+  },
+  "loading": {
+    "text": "Chargement",
+    "word1": "Initialisation",
+    "word2": "Chargement des ressources",
+    "word3": "Compilation des shaders",
+    "word4": "Presque prêt",
+    "portfolio": "Portfolio"
+  }
+}

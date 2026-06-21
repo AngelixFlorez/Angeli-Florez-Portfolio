@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "ESTUDIANTE",
+    "career": "Ingeniería de Sistemas",
+    "tagline": "Transformando problemas complejos en experiencias digitales elegantes y de alto impacto",
+    "explore": "Explorar mi Trabajo",
+    "opportunities": "Disponible para oportunidades",
+    "contact": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "label": "Sobre Mí",
+    "heading1": "Transformando ideas en",
+    "heading2": "realidad digital",
+    "sp1Label": "Arquitectura Full-Stack",
+    "sp1Desc": "Sistemas escalables con stacks modernos de frontend y backend",
+    "sp2Label": "Desarrollo Creativo",
+    "sp2Desc": "Experiencias web 3D y diseño de movimiento avanzado",
+    "sp3Label": "Diseño de Sistemas",
+    "sp3Desc": "Arquitecturas distribuidas de alto rendimiento",
+    "sp4Label": "Ingeniería UI",
+    "sp4Desc": "Desarrollo impulsado por diseño con precisión de píxel perfecto",
+    "para1": "Con más de 5 años de experiencia en desarrollo de software, transformo ideas en soluciones digitales potentes. Mi trayectoria abarca desde la creación de arquitecturas backend escalables hasta la elaboración de experiencias frontend inmersivas que los usuarios aman.",
+    "para2": "Creo que la tecnología debe ser poderosa y hermosa. Cada línea de código es una oportunidad para crear algo que no solo funcione a la perfección, sino que también genere alegría e intuición en quienes interactúan con ella.",
+    "para3": "Actualmente explorando las fronteras de los gráficos 3D basados en web, interfaces impulsadas por IA y experiencias colaborativas en tiempo real que empujan los límites de lo que el navegador puede hacer.",
+    "philosophy": "El código es poesía en movimiento. Cada función, componente y píxel es una pincelada en una obra maestra más grande de artesanía digital."
+  },
+  "skills": {
+    "title": "Experiencia",
+    "highlight": "técnica",
+    "label": "Habilidades",
+    "subtitle": "Un conjunto completo de herramientas que abarca frontend, backend, tecnologías creativas e infraestructura en la nube."
+  },
+  "projects": {
+    "label": "Proyectos",
+    "title": "Trabajo",
+    "highlight": "seleccionado",
+    "subtitle": "Una selección curada de proyectos que muestran mi experiencia en la creación de experiencias digitales de alto rendimiento y visualmente atractivas.",
+    "problem": "Problema",
+    "result": "Resultado",
+    "demo": "Demo en Vivo",
+    "repo": "Repositorio"
+  },
+  "education": {
+    "label": "Educación",
+    "subtitle": "Formación académica y desarrollo profesional"
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Creemos algo",
+    "highlight": "increíble",
+    "subtitle": "¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti. Construyamos algo extraordinario juntos.",
+    "findMe": "Encuéntrame en",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje Enviado!",
+    "error": "Error - Intenta de Nuevo",
+    "yourName": "Tu nombre",
+    "yourEmail": "Tu correo",
+    "yourMessage": "Tu mensaje...",
+    "subject": "Asunto"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "back": "Volver arriba"
+  },
+  "loading": {
+    "text": "Cargando",
+    "word1": "Inicializando",
+    "word2": "Cargando recursos",
+    "word3": "Compilando shaders",
+    "word4": "Casi listo",
+    "portfolio": "Portafolio"
+  }
+}

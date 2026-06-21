@@ -1,6 +1,5 @@
 export const personalInfo = {
   name: 'Angeli Florez',
-  tagline: 'Turning complex problems into elegant, high-impact digital experiences',
   description: 'I craft high-performance web applications with meticulous attention to interaction design, animation, and user experience.',
   email: 'angelixflorez@gmail.com',
   location: 'Bogotá, Colombia',
@@ -38,7 +37,7 @@ export const skills = {
     { name: 'WebGL/GLSL', level: 75 },
     { name: 'GSAP', level: 80 },
     { name: 'Figma', level: 82 },
-    { name: 'Blender', level: 70 },
+
   ],
   'Cloud & DevOps': [
     { name: 'AWS', level: 80 },

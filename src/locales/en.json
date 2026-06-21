@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "STUDENT",
+    "career": "Systems Engineering",
+    "tagline": "Turning complex problems into elegant, high-impact digital experiences",
+    "explore": "Explore My Work",
+    "opportunities": "Available for opportunities",
+    "contact": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "label": "About",
+    "heading1": "Transforming ideas into",
+    "heading2": "digital reality",
+    "sp1Label": "Full-Stack Architecture",
+    "sp1Desc": "Scalable systems with modern frontend & backend stacks",
+    "sp2Label": "Creative Development",
+    "sp2Desc": "3D web experiences & advanced motion design",
+    "sp3Label": "System Design",
+    "sp3Desc": "High-performance distributed architectures",
+    "sp4Label": "UI Engineering",
+    "sp4Desc": "Design-driven development with pixel-perfect precision",
+    "para1": "With over 5 years of experience in software development, I transform ideas into powerful digital solutions. My journey spans from building scalable backend architectures to crafting immersive frontend experiences that users love.",
+    "para2": "I believe technology should be both powerful and beautiful. Every line of code is an opportunity to create something that not only works flawlessly but also sparks joy and intuition in those who interact with it.",
+    "para3": "Currently exploring the frontiers of web-based 3D graphics, AI-powered interfaces, and real-time collaborative experiences that push the boundaries of what the browser can do.",
+    "philosophy": "Code is poetry in motion. Every function, component, and pixel is a brushstroke in a larger masterpiece of digital craftsmanship."
+  },
+  "skills": {
+    "title": "Technical",
+    "highlight": "expertise",
+    "label": "Skills",
+    "subtitle": "A comprehensive toolkit spanning frontend, backend, creative technologies, and cloud infrastructure."
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Selected",
+    "highlight": "work",
+    "subtitle": "A curated selection of projects that showcase my expertise in building high-performance, visually compelling digital experiences.",
+    "problem": "Problem",
+    "result": "Result",
+    "demo": "Live Demo",
+    "repo": "Repository"
+  },
+  "education": {
+    "label": "Education",
+    "subtitle": "Academic background and professional development"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's create something",
+    "highlight": "amazing",
+    "subtitle": "Have a project in mind or just want to connect? I'd love to hear from you. Let's build something extraordinary together.",
+    "findMe": "Find me on",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message Sent!",
+    "error": "Error - Try Again",
+    "yourName": "Your name",
+    "yourEmail": "Your email",
+    "yourMessage": "Your message...",
+    "subject": "Subject"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "back": "Back to top"
+  },
+  "loading": {
+    "text": "Loading",
+    "word1": "Initializing",
+    "word2": "Loading assets",
+    "word3": "Compiling shaders",
+    "word4": "Almost ready",
+    "portfolio": "Portfolio"
+  }
+}
