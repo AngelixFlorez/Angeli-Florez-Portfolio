@@ -11,39 +11,39 @@
     "badge": "ESTUDIANTE",
     "career": "Ingeniería de Sistemas",
     "tagline": "Si puedes imaginarlo, puedes crearlo. Si puedes aprenderlo, puedes lograrlo.",
-    "explore": "Explorar mi Trabajo",
+    "explore": "Explorar Mi Trabajo",
     "opportunities": "Disponible para oportunidades",
     "contact": "Contáctame"
   },
   "about": {
     "title": "Sobre Mí",
     "label": "Sobre Mí",
-    "heading1": "Transformando ideas en",
-    "heading2": "realidad digital",
-    "sp1Label": "Arquitectura Full-Stack",
-    "sp1Desc": "Sistemas escalables con stacks modernos de frontend y backend",
-    "sp2Label": "Desarrollo Creativo",
-    "sp2Desc": "Experiencias web 3D y diseño de movimiento avanzado",
-    "sp3Label": "Diseño de Sistemas",
-    "sp3Desc": "Arquitecturas distribuidas de alto rendimiento",
-    "sp4Label": "Ingeniería UI",
-    "sp4Desc": "Desarrollo impulsado por diseño con precisión de píxel perfecto",
-    "para1": "Con más de 5 años de experiencia en desarrollo de software, transformo ideas en soluciones digitales potentes. Mi trayectoria abarca desde la creación de arquitecturas backend escalables hasta la elaboración de experiencias frontend inmersivas que los usuarios aman.",
-    "para2": "Creo que la tecnología debe ser poderosa y hermosa. Cada línea de código es una oportunidad para crear algo que no solo funcione a la perfección, sino que también genere alegría e intuición en quienes interactúan con ella.",
-    "para3": "Actualmente explorando las fronteras de los gráficos 3D basados en web, interfaces impulsadas por IA y experiencias colaborativas en tiempo real que empujan los límites de lo que el navegador puede hacer.",
-    "philosophy": "El código es poesía en movimiento. Cada función, componente y píxel es una pincelada en una obra maestra más grande de artesanía digital."
+    "heading1": "Transformando ideas",
+    "heading2": "Creando sueños",
+    "sp1Label": "Idiomas",
+    "sp1Desc": "Español (nativo), Inglés (fluido), Francés (aprendiendo), Alemán (pronto)",
+    "sp2Label": "Desarrollo Full-Stack",
+    "sp2Desc": "Construyendo aplicaciones web completas con tecnologías modernas de frontend y backend",
+    "sp3Label": "Aprendizaje con IA",
+    "sp3Desc": "Usando la IA como catalizador para dominar nuevas tecnologías y resolver problemas complejos",
+    "sp4Label": "Resolución Creativa",
+    "sp4Desc": "Convirtiendo desafíos complejos en soluciones elegantes y prácticas mediante pensamiento analítico",
+    "para1": "Con 6 semestres de formación académica en Ingeniería de Sistemas, he desarrollado una conocimiento base en desarrollo de software, bases de datos y experiencias interactivas. Mi enfoque se centra en construir soluciones eficientes, escalables y visualmente atractivas que resuelvan problemas reales.",
+    "para2": "Creo que la tecnología debe ser poderosa y hermosa, por eso me apoyo con la IA, para potenciar mis habilidades y aprender aquello que me apasiona de manera eficiente.",
+    "para3": "Actualmente estoy explorando todo lo que me permita aprender y mejorar en todo lo relacionado con la tecnología, como la IA, el desarrollo de software, el diseño de sistemas y las experiencias interactivas.",
+    "philosophy": "Mientras sigas intentándolo, cada fracaso será una oportunidad para aprender y crecer. Y siempre se puede ser mejor."
   },
   "skills": {
     "title": "Experiencia",
     "highlight": "técnica",
-    "label": "Habilidades",
-    "subtitle": "Un conjunto completo de herramientas que abarca frontend, backend, tecnologías creativas e infraestructura en la nube."
+    "label": "Habilidades"
+
   },
   "projects": {
     "label": "Proyectos",
     "title": "Trabajo",
     "highlight": "seleccionado",
-    "subtitle": "Una selección curada de proyectos que muestran mi experiencia en la creación de experiencias digitales de alto rendimiento y visualmente atractivas.",
+    "subtitle": "Una selección de proyectos que muestran la creación de experiencias digitales de alto rendimiento visualmente atractivas.",
     "problem": "Problema",
     "result": "Resultado",
     "demo": "Demo en Vivo",
@@ -81,7 +81,7 @@
     "items": {
       "systems-engineering": {
         "degree": "Ingeniería de Sistemas",
-        "focus": "Ingeniería de Software, Algoritmos, Estructuras de Datos, Interacción Humano-Computador"
+        "focus": "Ingeniería de Software, Algoritmos, Bases de Datos, Interacción Humano-Computador"
       },
       "modern-languages": {
         "degree": "Lenguas Modernas",
@@ -91,9 +91,9 @@
   },
   "contact": {
     "label": "Contacto",
-    "title": "Creemos algo",
-    "highlight": "increíble",
-    "subtitle": "¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti. Construyamos algo extraordinario juntos.",
+    "title": "Creemos algo increible,",
+    "highlight": "me encantaria aprender y trabajar contigo.",
+    "subtitle": "¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti.",
     "findMe": "Encuéntrame en",
     "name": "Nombre",
     "email": "Correo",

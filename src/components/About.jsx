@@ -1,15 +1,15 @@
 import { useRef, useMemo } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
-import { Code2, Sparkles, Brain, Palette } from 'lucide-react'
+import { Globe, Code2, Cpu, Lightbulb } from 'lucide-react'
 
 export default function About() {
   const { t } = useLanguage()
   const specialties = useMemo(() => [
-    { icon: Code2, label: t('about', 'sp1Label'), desc: t('about', 'sp1Desc'), color: '#8b5cf6' },
-    { icon: Sparkles, label: t('about', 'sp2Label'), desc: t('about', 'sp2Desc'), color: '#a78bfa' },
-    { icon: Brain, label: t('about', 'sp3Label'), desc: t('about', 'sp3Desc'), color: '#3b82f6' },
-    { icon: Palette, label: t('about', 'sp4Label'), desc: t('about', 'sp4Desc'), color: '#60a5fa' },
+    { icon: Globe, label: t('about', 'sp1Label'), desc: t('about', 'sp1Desc'), color: '#8b5cf6' },
+    { icon: Code2, label: t('about', 'sp2Label'), desc: t('about', 'sp2Desc'), color: '#a78bfa' },
+    { icon: Cpu, label: t('about', 'sp3Label'), desc: t('about', 'sp3Desc'), color: '#3b82f6' },
+    { icon: Lightbulb, label: t('about', 'sp4Label'), desc: t('about', 'sp4Desc'), color: '#60a5fa' },
   ], [t])
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
