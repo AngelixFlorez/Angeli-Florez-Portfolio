@@ -10,7 +10,7 @@
   "hero": {
     "badge": "ESTUDIANTE",
     "career": "Ingeniería de Sistemas",
-    "tagline": "Transformando problemas complejos en experiencias digitales elegantes y de alto impacto",
+    "tagline": "Si puedes imaginarlo, puedes crearlo. Si puedes aprenderlo, puedes lograrlo.",
     "explore": "Explorar mi Trabajo",
     "opportunities": "Disponible para oportunidades",
     "contact": "Contáctame"
@@ -47,11 +47,47 @@
     "problem": "Problema",
     "result": "Resultado",
     "demo": "Demo en Vivo",
-    "repo": "Repositorio"
+    "repo": "Repositorio",
+    "items": {
+      "yomessage": {
+        "title": "YoMessage",
+        "description": "App de mensajería en tiempo real con una interfaz impresionante y totalmente personalizable. Construida con React 19, Express 5, Socket.IO, MongoDB y Clerk Auth.",
+        "problem": "Las plataformas de mensajería existentes ofrecen personalización limitada y carecen de funciones interactivas como personalización de temas, compartir medios y experiencias de chat inmersivas.",
+        "result": "Se entregó una plataforma de mensajería completa con 27 temas, 16 fondos de chat, compartir imágenes/video en tiempo real, autenticación Clerk y despliegue con Docker."
+      },
+      "ethereal": {
+        "title": "Ethereal Space",
+        "description": "Plataforma de colaboración 3D inmersiva para equipos remotos con entornos virtuales e interacciones de avatar en tiempo real.",
+        "problem": "Los equipos remotos carecían de herramientas espaciales atractivas para la colaboración creativa.",
+        "result": "Adoptado por más de 15 equipos de diseño, duración promedio de sesión de 45 minutos, NPS de 72."
+      },
+      "violet": {
+        "title": "Violet Design System",
+        "description": "Librería de componentes de nivel empresarial que impulsa 12 productos con más de 200 componentes accesibles y personalizables.",
+        "problem": "La interfaz inconsistente entre productos generaba 3x más tiempo de desarrollo para nuevas funcionalidades.",
+        "result": "Redujo el tiempo de desarrollo de UI en un 70%, mantuvo 99.9% de accesibilidad, usado por más de 80 ingenieros."
+      },
+      "wave": {
+        "title": "Wave Engine",
+        "description": "Entorno de codificación creativa basado en web con interfaz de programación visual y vista previa en tiempo real.",
+        "problem": "No existía una herramienta accesible en el navegador para la educación en codificación creativa.",
+        "result": "Más de 50k usuarios activos mensuales, destacado en Product Hunt, calificación de 4.8/5."
+      }
+    }
   },
   "education": {
     "label": "Educación",
-    "subtitle": "Formación académica y desarrollo profesional"
+    "subtitle": "Formación académica y desarrollo profesional",
+    "items": {
+      "systems-engineering": {
+        "degree": "Ingeniería de Sistemas",
+        "focus": "Ingeniería de Software, Algoritmos, Estructuras de Datos, Interacción Humano-Computador"
+      },
+      "modern-languages": {
+        "degree": "Lenguas Modernas",
+        "focus": "Inglés, Francés, Alemán"
+      }
+    }
   },
   "contact": {
     "label": "Contacto",

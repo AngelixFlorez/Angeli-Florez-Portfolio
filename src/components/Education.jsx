@@ -50,12 +50,12 @@ export default function Education() {
                   <GraduationCap className="w-7 h-7 text-primary-light" />
                 </motion.div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-text-primary group-hover:text-white transition-colors">{item.degree}</h3>
+                  <h3 className="font-bold text-lg mb-1 text-text-primary group-hover:text-white transition-colors">{t('education', 'items.' + item.key + '.degree')}</h3>
                   <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-accent-light font-medium mb-2">{item.institution}</p>
                   <div className="flex items-center gap-3 text-xs text-text-muted font-mono">
                     <span>{item.year}</span>
                     <span className="w-1 h-1 rounded-full bg-border" />
-                    <span>{item.focus}</span>
+                    <span>{t('education', 'items.' + item.key + '.focus')}</span>
                   </div>
                 </div>
               </div>

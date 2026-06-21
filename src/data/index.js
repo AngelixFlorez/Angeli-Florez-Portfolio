@@ -1,6 +1,5 @@
 export const personalInfo = {
   name: 'Angeli Florez',
-  description: 'I craft high-performance web applications with meticulous attention to interaction design, animation, and user experience.',
   email: 'angelixflorez@gmail.com',
   location: 'Bogotá, Colombia',
   social: {
@@ -9,12 +8,6 @@ export const personalInfo = {
     whatsapp: 'https://wa.me/+573214345914',
     gmail: 'mailto:angelixflorez@gmail.com',
   },
-  about: [
-    'With over 5 years of experience in software development, I transform ideas into powerful digital solutions. My journey spans from building scalable backend architectures to crafting immersive frontend experiences that users love.',
-    'I believe technology should be both powerful and beautiful. Every line of code is an opportunity to create something that not only works flawlessly but also sparks joy and intuition in those who interact with it.',
-    'Currently exploring the frontiers of web-based 3D graphics, AI-powered interfaces, and real-time collaborative experiences that push the boundaries of what the browser can do.',
-  ],
-  philosophy: 'Code is poetry in motion. Every function, component, and pixel is a brushstroke in a larger masterpiece of digital craftsmanship.',
 }
 
 export const skills = {
@@ -50,11 +43,9 @@ export const skills = {
 
 export const projects = [
   {
+    key: 'yomessage',
     title: 'YoMessage',
-    description: 'Real-time messaging app with a stunning, fully customizable UI. Built with React 19, Express 5, Socket.IO, MongoDB, and Clerk Auth.',
     tech: ['React', 'Node.js', 'Express', 'Socket.IO', 'MongoDB', 'Tailwind CSS', 'Docker', 'Clerk'],
-    problem: 'Existing messaging platforms offer limited customization and lack engaging real-time features like theme personalization, media sharing, and immersive chat experiences out of the box.',
-    result: 'Delivered a full-featured messaging platform with 27 theme presets, 16 chat wallpapers, real-time image/video sharing, secure Clerk authentication, and one-command Docker deployment.',
     image: '/projectImages/YoMessagePortada.png',
     images: [
       '/projectImages/YoMessagePortada.png',
@@ -69,11 +60,9 @@ export const projects = [
     color: '#6366f1',
   },
   {
+    key: 'ethereal',
     title: 'Ethereal Space',
-    description: 'Immersive 3D collaboration platform for remote teams with virtual environments and real-time avatar interactions.',
     tech: ['Three.js', 'React Three Fiber', 'WebRTC', 'Node.js', 'PostgreSQL'],
-    problem: 'Remote teams lacked engaging spatial tools for creative collaboration.',
-    result: 'Adopted by 15+ design teams, average session duration of 45 minutes, NPS score of 72.',
     image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800&q=80',
     images: [
       'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800&q=80',
@@ -85,11 +74,9 @@ export const projects = [
     color: '#3b82f6',
   },
   {
+    key: 'violet',
     title: 'Violet Design System',
-    description: 'Enterprise-grade component library powering 12 products with 200+ accessible, themeable components.',
     tech: ['React', 'TypeScript', 'Storybook', 'Radix UI', 'Tailwind'],
-    problem: 'Inconsistent UI across products led to 3x development time for new features.',
-    result: 'Reduced UI development time by 70%, maintained 99.9% accessibility score, used by 80+ engineers.',
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
     images: [
       'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
@@ -101,11 +88,9 @@ export const projects = [
     color: '#7c3aed',
   },
   {
+    key: 'wave',
     title: 'Wave Engine',
-    description: 'Web-based creative coding environment with visual programming interface and real-time preview.',
     tech: ['React', 'Web Audio API', 'WebAssembly', 'Canvas', 'GSAP'],
-    problem: 'No accessible browser-based tool existed for creative coding education.',
-    result: '50k+ monthly active users, featured on Product Hunt, 4.8/5 rating.',
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80',
     images: [
       'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80',
@@ -120,15 +105,13 @@ export const projects = [
 
 export const education = [
   {
-    degree: 'Systems Engineering',
+    key: 'systems-engineering',
     institution: 'Fundación Universitaria Monserrate',
     year: '2024 - Present',
-    focus: 'Software Engineering, Algorithms, Data Structures, Human-Computer Interaction',
   },
   {
-    degree: 'Modern Languages',
+    key: 'modern-languages',
     institution: 'Universidad EAN',
     year: '2025 - Present',
-    focus: 'English, French, German',
   },
 ]

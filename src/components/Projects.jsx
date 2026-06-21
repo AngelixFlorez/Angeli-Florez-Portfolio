@@ -38,6 +38,7 @@ function TechBadge({ name, size = 'sm' }) {
 }
 
 function ProjectCard({ project, index, isInView, onClick }) {
+  const { t } = useLanguage()
   return (
     <motion.div
       initial={{ opacity: 0, y: 60, scale: 0.95 }}
@@ -67,10 +68,10 @@ function ProjectCard({ project, index, isInView, onClick }) {
 
       <div className="p-6">
         <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
-          {project.title}
+          {t('projects', 'items.' + project.key + '.title')}
         </h3>
         <p className="text-sm text-text-muted leading-relaxed mb-4 line-clamp-2">
-          {project.description}
+          {t('projects', 'items.' + project.key + '.description')}
         </p>
 
         <div className="flex flex-wrap gap-1.5">
@@ -162,17 +163,17 @@ function ProjectModal({ project, onClose }) {
         </div>
 
         <div className="overflow-y-auto p-6 md:p-8">
-          <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-          <p className="text-text-secondary mb-6 leading-relaxed">{project.description}</p>
+          <h3 className="text-2xl font-bold mb-3">{t('projects', 'items.' + project.key + '.title')}</h3>
+          <p className="text-text-secondary mb-6 leading-relaxed">{t('projects', 'items.' + project.key + '.description')}</p>
 
           <div className="space-y-4 mb-6">
             <div>
               <h4 className="text-xs font-mono text-text-muted uppercase tracking-wider mb-1">{t('projects', 'problem')}</h4>
-              <p className="text-sm text-text-secondary">{project.problem}</p>
+              <p className="text-sm text-text-secondary">{t('projects', 'items.' + project.key + '.problem')}</p>
             </div>
             <div>
               <h4 className="text-xs font-mono text-text-muted uppercase tracking-wider mb-1">{t('projects', 'result')}</h4>
-              <p className="text-sm text-text-secondary">{project.result}</p>
+              <p className="text-sm text-text-secondary">{t('projects', 'items.' + project.key + '.result')}</p>
             </div>
           </div>
 

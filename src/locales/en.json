@@ -10,7 +10,7 @@
   "hero": {
     "badge": "STUDENT",
     "career": "Systems Engineering",
-    "tagline": "Turning complex problems into elegant, high-impact digital experiences",
+    "tagline": "If you can imagine it, you can create it. If you can learn it, you can achieve it",
     "explore": "Explore My Work",
     "opportunities": "Available for opportunities",
     "contact": "Get in Touch"
@@ -47,11 +47,47 @@
     "problem": "Problem",
     "result": "Result",
     "demo": "Live Demo",
-    "repo": "Repository"
+    "repo": "Repository",
+    "items": {
+      "yomessage": {
+        "title": "YoMessage",
+        "description": "Real-time messaging app with a stunning, fully customizable UI. Built with React 19, Express 5, Socket.IO, MongoDB, and Clerk Auth.",
+        "problem": "Existing messaging platforms offer limited customization and lack engaging real-time features like theme personalization, media sharing, and immersive chat experiences out of the box.",
+        "result": "Delivered a full-featured messaging platform with 27 theme presets, 16 chat wallpapers, real-time image/video sharing, secure Clerk authentication, and one-command Docker deployment."
+      },
+      "ethereal": {
+        "title": "Ethereal Space",
+        "description": "Immersive 3D collaboration platform for remote teams with virtual environments and real-time avatar interactions.",
+        "problem": "Remote teams lacked engaging spatial tools for creative collaboration.",
+        "result": "Adopted by 15+ design teams, average session duration of 45 minutes, NPS score of 72."
+      },
+      "violet": {
+        "title": "Violet Design System",
+        "description": "Enterprise-grade component library powering 12 products with 200+ accessible, themeable components.",
+        "problem": "Inconsistent UI across products led to 3x development time for new features.",
+        "result": "Reduced UI development time by 70%, maintained 99.9% accessibility score, used by 80+ engineers."
+      },
+      "wave": {
+        "title": "Wave Engine",
+        "description": "Web-based creative coding environment with visual programming interface and real-time preview.",
+        "problem": "No accessible browser-based tool existed for creative coding education.",
+        "result": "50k+ monthly active users, featured on Product Hunt, 4.8/5 rating."
+      }
+    }
   },
   "education": {
     "label": "Education",
-    "subtitle": "Academic background and professional development"
+    "subtitle": "Academic background and professional development",
+    "items": {
+      "systems-engineering": {
+        "degree": "Systems Engineering",
+        "focus": "Software Engineering, Algorithms, Data Structures, Human-Computer Interaction"
+      },
+      "modern-languages": {
+        "degree": "Modern Languages",
+        "focus": "English, French, German"
+      }
+    }
   },
   "contact": {
     "label": "Contact",

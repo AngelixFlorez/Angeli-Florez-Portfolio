@@ -47,11 +47,47 @@
     "problem": "Problème",
     "result": "Résultat",
     "demo": "Démo en Direct",
-    "repo": "Dépôt"
+    "repo": "Dépôt",
+    "items": {
+      "yomessage": {
+        "title": "YoMessage",
+        "description": "Application de messagerie en temps réel avec une interface époustouflante et entièrement personnalisable. Construite avec React 19, Express 5, Socket.IO, MongoDB et Clerk Auth.",
+        "problem": "Les plateformes de messagerie existantes offrent une personnalisation limitée et manquent de fonctionnalités interactives comme la personnalisation de thèmes, le partage de médias et des expériences de chat immersives.",
+        "result": "Livré une plateforme de messagerie complète avec 27 thèmes, 16 fonds d'écran de chat, partage d'images/vidéos en temps réel, authentification Clerk et déploiement Docker."
+      },
+      "ethereal": {
+        "title": "Ethereal Space",
+        "description": "Plateforme de collaboration 3D immersive pour les équipes distantes avec environnements virtuels et interactions d'avatar en temps réel.",
+        "problem": "Les équipes distantes manquaient d'outils spatiaux engageants pour la collaboration créative.",
+        "result": "Adopté par plus de 15 équipes de conception, durée moyenne de session de 45 minutes, score NPS de 72."
+      },
+      "violet": {
+        "title": "Violet Design System",
+        "description": "Bibliothèque de composants niveau entreprise alimentant 12 produits avec plus de 200 composants accessibles et personnalisables.",
+        "problem": "Une interface incohérente entre les produits entraînait 3x plus de temps de développement pour les nouvelles fonctionnalités.",
+        "result": "Réduit le temps de développement UI de 70%, maintenu 99.9% d'accessibilité, utilisé par plus de 80 ingénieurs."
+      },
+      "wave": {
+        "title": "Wave Engine",
+        "description": "Environnement de codage créatif basé sur le web avec interface de programmation visuelle et aperçu en temps réel.",
+        "problem": "Aucun outil accessible dans le navigateur n'existait pour l'éducation au codage créatif.",
+        "result": "Plus de 50k utilisateurs actifs mensuels, présenté sur Product Hunt, note de 4.8/5."
+      }
+    }
   },
   "education": {
     "label": "Formation",
-    "subtitle": "Formation académique et développement professionnel"
+    "subtitle": "Formation académique et développement professionnel",
+    "items": {
+      "systems-engineering": {
+        "degree": "Génie Informatique",
+        "focus": "Génie Logiciel, Algorithmes, Structures de Données, Interaction Homme-Machine"
+      },
+      "modern-languages": {
+        "degree": "Langues Modernes",
+        "focus": "Anglais, Français, Allemand"
+      }
+    }
   },
   "contact": {
     "label": "Contact",
