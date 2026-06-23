@@ -50,6 +50,7 @@ function CursorFollower() {
             mass: 0.5,
           }}
           className="fixed pointer-events-none z-[200] mix-blend-difference top-0 left-0"
+          aria-hidden="true"
         >
           <div className="w-8 h-8 rounded-full bg-white/90 shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
         </motion.div>
@@ -62,9 +63,16 @@ function ScrollProgress() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      const total = document.documentElement.scrollHeight - window.innerHeight
-      setProgress(total > 0 ? window.scrollY / total : 0)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const total = document.documentElement.scrollHeight - window.innerHeight
+          setProgress(total > 0 ? window.scrollY / total : 0)
+          ticking = false
+        })
+        ticking = true
+      }
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -114,7 +122,7 @@ export default function App() {
             <CursorFollower />
             <ScrollProgress />
             <Navigation />
-            <main>
+            <main id="main-content">
               <Hero />
               <About />
               <Skills />

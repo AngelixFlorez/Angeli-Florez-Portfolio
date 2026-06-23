@@ -29,16 +29,16 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <ErrorBoundary fallback={<div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />}>
-        <Suspense fallback={<div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />}>
-          <div className="absolute inset-0">
+      <div className="absolute inset-0" aria-hidden="true">
+        <ErrorBoundary fallback={<div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />}>
+          <Suspense fallback={<div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />}>
             <SplineScene
               scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
               className="w-full h-full"
             />
-          </div>
-        </Suspense>
-      </ErrorBoundary>
+          </Suspense>
+        </ErrorBoundary>
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-surface/20 to-transparent pointer-events-none" />
 
@@ -115,15 +115,11 @@ export default function Hero() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16 pointer-events-auto"
           >
-            <motion.a
-              href="#projects"
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
-              }}
+            <motion.button
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(168,85,247,0.4)' }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold tracking-wide overflow-hidden"
+              className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold tracking-wide overflow-hidden cursor-pointer"
             >
               <motion.span
                 className="relative z-10 flex items-center gap-2"
@@ -138,7 +134,7 @@ export default function Hero() {
                 whileHover={{ x: '100%' }}
                 transition={{ duration: 0.6, ease: 'easeInOut' }}
               />
-            </motion.a>
+            </motion.button>
 
             <motion.div
               variants={itemVariants}
@@ -154,15 +150,11 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-              }}
+            <motion.button
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(168,85,247,0.4)' }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold tracking-wide overflow-hidden"
+              className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-semibold tracking-wide overflow-hidden cursor-pointer"
             >
               <motion.span
                 className="relative z-10"
@@ -177,7 +169,7 @@ export default function Hero() {
                 whileHover={{ x: '100%' }}
                 transition={{ duration: 0.6, ease: 'easeInOut' }}
               />
-            </motion.a>
+            </motion.button>
           </motion.div>
 
           <SocialDock />

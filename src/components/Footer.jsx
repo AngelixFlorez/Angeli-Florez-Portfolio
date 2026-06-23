@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { ArrowUp } from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 

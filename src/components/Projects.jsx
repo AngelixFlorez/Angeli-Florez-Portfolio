@@ -30,7 +30,7 @@ function TechBadge({ name, size = 'sm' }) {
       }}
     >
       {cfg.logoSrc && (
-        <img src={cfg.logoSrc} alt={name} className={isSmall ? 'w-3.5 h-3.5' : 'w-4 h-4'} />
+        <img src={cfg.logoSrc} alt={name} width="14" height="14" loading="lazy" className={isSmall ? 'w-3.5 h-3.5' : 'w-4 h-4'} />
       )}
       {name}
     </span>
@@ -46,12 +46,19 @@ function ProjectCard({ project, index, isInView, onClick }) {
       transition={{ duration: 0.8, delay: 0.1 + index * 0.15, type: 'spring', damping: 20 }}
       whileHover={{ y: -10, boxShadow: '0 20px 40px -20px rgba(168,85,247,0.4)' }}
       onClick={() => onClick(project)}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(project) } }}
+      role="button"
+      tabIndex={0}
+      aria-label={`View details for ${project.title}`}
       className="group cursor-pointer rounded-2xl border border-white/5 overflow-hidden glass-card hover:border-primary/40 transition-all duration-500 relative"
     >
       <div className="relative h-48 md:h-56 overflow-hidden">
         <motion.img
           src={imgUrl(project.image)}
           alt={project.title}
+          width="800"
+          height="448"
+          loading="lazy"
           className="w-full h-full object-cover"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -103,6 +110,9 @@ function ProjectModal({ project, onClose }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Project details: ${project.title}`}
       className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
     >
       <motion.div
@@ -116,6 +126,7 @@ function ProjectModal({ project, onClose }) {
       >
         <button
           onClick={onClose}
+          aria-label="Close project details"
           className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/50 backdrop-blur-md border border-white/10 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all"
         >
           <X className="w-5 h-5" />
@@ -127,6 +138,9 @@ function ProjectModal({ project, onClose }) {
             key={currentImg}
             src={imgUrl(images[currentImg])}
             alt={`${project.title} ${currentImg + 1}`}
+            width="800"
+            height="540"
+            loading="lazy"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -139,12 +153,14 @@ function ProjectModal({ project, onClose }) {
             <>
               <button
                 onClick={prevImg}
+                aria-label="Previous image"
                 className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/50 backdrop-blur-md border border-white/10 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={nextImg}
+                aria-label="Next image"
                 className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/50 backdrop-blur-md border border-white/10 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -154,6 +170,7 @@ function ProjectModal({ project, onClose }) {
                   <button
                     key={i}
                     onClick={() => setCurrentImg(i)}
+                    aria-label={`View image ${i + 1}`}
                     className={`w-2 h-2 rounded-full transition-all ${i === currentImg ? 'bg-white w-4' : 'bg-white/40'}`}
                   />
                 ))}

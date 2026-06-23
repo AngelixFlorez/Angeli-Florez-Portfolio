@@ -20,18 +20,26 @@ export default function Navigation() {
   ]
 
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 50)
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i].id)
-        if (el) {
-          const rect = el.getBoundingClientRect()
-          if (rect.top <= 200) {
-            setActiveSection(sections[i].id)
-            break
+          const ids = ['contact', 'education', 'projects', 'skills', 'about', 'home']
+          for (const id of ids) {
+            const el = document.getElementById(id)
+            if (el) {
+              const rect = el.getBoundingClientRect()
+              if (rect.top <= 200) {
+                setActiveSection(id)
+                break
+              }
+            }
           }
-        }
+          ticking = false
+        })
+        ticking = true
       }
     }
 
@@ -58,6 +66,7 @@ export default function Navigation() {
         className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[95%] max-w-5xl ${
           scrolled ? 'py-2' : 'py-4'
         }`}
+        aria-label="Main navigation"
       >
         <div 
           className={`flex items-center justify-between mx-auto transition-all duration-500 ${
@@ -87,6 +96,7 @@ export default function Navigation() {
                 onClick={() => scrollTo(section.id)}
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0, scale: 0.95 }}
+                aria-current={activeSection === section.id ? 'true' : undefined}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-full ${
                   activeSection === section.id
                     ? 'text-white'
@@ -108,6 +118,7 @@ export default function Navigation() {
               onClick={cycleLang}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              aria-label={`Current language: ${langLabels[lang]}. Click to change language.`}
               className="ml-3 relative px-3 py-1.5 text-xs font-mono font-semibold tracking-wider rounded-full border border-primary/30 text-primary-light bg-primary/10 hover:bg-primary/20 hover:border-primary/50 transition-all"
             >
               <span className="flex items-center gap-1.5">
@@ -121,6 +132,7 @@ export default function Navigation() {
             <motion.button
               onClick={cycleLang}
               whileTap={{ scale: 0.95 }}
+              aria-label={`Current language: ${langLabels[lang]}. Click to change language.`}
               className="px-2.5 py-1.5 text-xs font-mono font-semibold tracking-wider rounded-full border border-primary/30 text-primary-light bg-primary/10"
             >
               {langLabels[lang]}
@@ -129,7 +141,8 @@ export default function Navigation() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-full bg-white/5 border border-white/10"
-              aria-label="Menu"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen}
             >
               <motion.span
                 animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
@@ -154,6 +167,9 @@ export default function Navigation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             className="fixed inset-0 z-40 bg-surface/95 backdrop-blur-2xl flex items-center justify-center"
           >
             <div className="flex flex-col items-center gap-8">

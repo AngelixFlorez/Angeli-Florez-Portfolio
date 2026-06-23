@@ -65,6 +65,7 @@ export default function SocialDock() {
                   setActive(item.label)
                   window.open(item.href, '_blank', 'noreferrer')
                 }}
+                aria-label={`Open ${item.label} in new tab`}
               >
                 <Icon
                   className={`h-5 w-5 transition-colors ${

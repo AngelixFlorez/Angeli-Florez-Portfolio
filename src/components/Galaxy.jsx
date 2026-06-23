@@ -177,11 +177,16 @@ export default function Galaxy({
   const smoothMousePos = useRef({ x: 0.5, y: 0.5 });
   const targetMouseActive = useRef(0.0);
   const smoothMouseActive = useRef(0.0);
+  const isVisible = useRef(true);
 
   useEffect(() => {
     if (!ctnDom.current) return;
 
     const ctn = ctnDom.current;
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible.current = entry.isIntersecting;
+    }, { threshold: 0 });
+    observer.observe(ctn);
 
     const renderer = new Renderer({
       alpha: transparent,
@@ -251,6 +256,8 @@ export default function Galaxy({
 
     function update(t) {
       animateId = requestAnimationFrame(update);
+      if (!isVisible.current) return;
+
       if (!disableAnimation) {
         program.uniforms.uTime.value = t * 0.001;
         program.uniforms.uStarSpeed.value = (t * 0.001 * starSpeed) / 10.0;
@@ -297,6 +304,7 @@ export default function Galaxy({
 
     return () => {
       cancelAnimationFrame(animateId);
+      observer.disconnect();
       window.removeEventListener('resize', resize);
       if (mouseInteraction) {
         ctn.removeEventListener('mousemove', handleMouseMove);

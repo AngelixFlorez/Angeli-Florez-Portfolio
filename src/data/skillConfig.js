@@ -97,13 +97,6 @@ export const skillConfig = {
     hoverBorderColor: 'rgba(242,78,30,0.6)',
     logoSrc: 'https://cdn.simpleicons.org/figma'
   },
-  Blender: {
-    color: '#f5792a',
-    bgColor: 'rgba(245,121,42,0.1)',
-    borderColor: 'rgba(245,121,42,0.3)',
-    hoverBorderColor: 'rgba(245,121,42,0.6)',
-    logoSrc: 'https://cdn.simpleicons.org/blender'
-  },
   AWS: {
     color: '#ff9900',
     bgColor: 'rgba(255,153,0,0.1)',
@@ -138,13 +131,6 @@ export const skillConfig = {
     borderColor: 'rgba(132,79,186,0.3)',
     hoverBorderColor: 'rgba(132,79,186,0.6)',
     logoSrc: 'https://cdn.simpleicons.org/terraform'
-  },
-  'D3.js': {
-    color: '#f9a03c',
-    bgColor: 'rgba(249,160,60,0.1)',
-    borderColor: 'rgba(249,160,60,0.3)',
-    hoverBorderColor: 'rgba(249,160,60,0.6)',
-    logoSrc: 'https://cdn.simpleicons.org/d3'
   },
   Storybook: {
     color: '#ff4785',
@@ -195,11 +181,4 @@ export const skillConfig = {
     hoverBorderColor: 'rgba(108,71,255,0.6)',
     logoSrc: 'https://cdn.simpleicons.org/clerk'
   },
-  'Vite': {
-    color: '#646cff',
-    bgColor: 'rgba(100,108,255,0.1)',
-    borderColor: 'rgba(100,108,255,0.3)',
-    hoverBorderColor: 'rgba(100,108,255,0.6)',
-    logoSrc: 'https://cdn.simpleicons.org/vite'
-  }
 }

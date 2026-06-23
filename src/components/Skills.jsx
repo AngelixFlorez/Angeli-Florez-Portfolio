@@ -38,7 +38,7 @@ function SkillBadge({ name }) {
       }}
     >
       {config.logoSrc ? (
-        <img src={config.logoSrc} alt={name} className="w-6 h-6 flex-shrink-0" />
+        <img src={config.logoSrc} alt={name} width="24" height="24" loading="lazy" className="w-6 h-6 flex-shrink-0" />
       ) : (
         <span
           className="w-6 h-6 flex-shrink-0"

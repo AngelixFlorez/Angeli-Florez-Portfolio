@@ -105,11 +105,12 @@ export default function Contact() {
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
               {['name', 'email', 'message'].map((field) => (
                 <div key={field} className="relative group">
-                  <label className="block text-sm font-medium text-text-secondary mb-2 capitalize group-focus-within:text-primary transition-colors">
+                  <label htmlFor={`contact-${field}`} className="block text-sm font-medium text-text-secondary mb-2 capitalize group-focus-within:text-primary transition-colors">
                     {t('contact', field)}
                   </label>
                   {field === 'message' ? (
                     <textarea
+                      id={`contact-${field}`}
                       name={field}
                       value={formState[field]}
                       onChange={handleChange}
@@ -120,12 +121,13 @@ export default function Contact() {
                     />
                   ) : (
                     <input
+                      id={`contact-${field}`}
                       type={field === 'email' ? 'email' : 'text'}
                       name={field}
                       value={formState[field]}
                       onChange={handleChange}
                       required
-                      placeholder={`${field === 'name' ? t('contact', 'yourName') : field === 'email' ? t('contact', 'yourEmail') : t('contact', 'yourMessage')}`}
+                      placeholder={`${field === 'name' ? t('contact', 'yourName') : t('contact', 'yourEmail')}`}
                       className="w-full px-5 py-4 rounded-xl border border-white/10 bg-white/5 text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all glass"
                     />
                   )}

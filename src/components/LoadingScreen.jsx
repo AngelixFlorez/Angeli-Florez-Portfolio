@@ -7,14 +7,16 @@ const loadingKeys = ['word1', 'word2', 'word3', 'word4']
 export default function LoadingScreen({ onComplete }) {
   const { t } = useLanguage()
   const [progress, setProgress] = useState(0)
-  const [wordIndex, setWordIndex] = useState(0)
+  const wordIndex = Math.min(Math.floor((progress / 100) * loadingKeys.length), loadingKeys.length - 1)
   const [show, setShow] = useState(true)
   const intervalRef = useRef(null)
+  const completedRef = useRef(false)
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setProgress((p) => {
         const next = Math.min(p + Math.random() * 4 + 1, 100)
+        if (next >= 100) clearInterval(intervalRef.current)
         return next
       })
     }, 80)
@@ -25,12 +27,8 @@ export default function LoadingScreen({ onComplete }) {
   }, [])
 
   useEffect(() => {
-    setWordIndex(Math.min(Math.floor((progress / 100) * loadingKeys.length), loadingKeys.length - 1))
-  }, [progress])
-
-  useEffect(() => {
-    if (progress >= 100) {
-      if (intervalRef.current) clearInterval(intervalRef.current)
+    if (progress >= 100 && !completedRef.current) {
+      completedRef.current = true
       const t1 = setTimeout(() => setShow(false), 400)
       const t2 = setTimeout(onComplete, 900)
       return () => {

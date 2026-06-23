@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import AutoScroll from 'embla-carousel-auto-scroll'
 import { cn } from '../../lib/utils'
 
-const Carousel = forwardRef(({ opts, plugins, orientation = "horizontal", className, children, ...props }, ref) => {
+function Carousel({ opts, plugins, orientation = "horizontal", className, children, ...props }) {
   const [emblaRef] = useEmblaCarousel(
     { ...opts, axis: orientation === "horizontal" ? "x" : "y" },
     [AutoScroll({ playOnInit: true }), ...(plugins || [])]
@@ -14,8 +14,7 @@ const Carousel = forwardRef(({ opts, plugins, orientation = "horizontal", classN
       {children}
     </div>
   )
-})
-Carousel.displayName = "Carousel"
+}
 
 const CarouselContent = forwardRef(({ className, children, ...props }, ref) => (
   <div ref={ref} className={cn("flex", className)} {...props}>
