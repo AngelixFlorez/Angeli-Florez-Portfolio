@@ -10,68 +10,57 @@
   "hero": {
     "badge": "ÉTUDIANT",
     "career": "Génie Informatique",
-    "tagline": "Transformer des problèmes complexes en expériences numériques élégantes à fort impact",
+    "tagline": "Si tu peux l'imaginer, tu peux le créer. Si tu peux l'apprendre, tu peux le réaliser.",
     "explore": "Explorer mon Travail",
     "opportunities": "Disponible pour opportunités",
     "contact": "Me Contacter"
   },
   "about": {
     "title": "À Propos de Moi",
-    "label": "À Propos",
-    "heading1": "Transformer des idées en",
-    "heading2": "réalité numérique",
+    "label": "À Propos de Moi",
+    "heading1": "Transformer",
+    "heading2": "des idées",
     "sp1Label": "Langues",
-    "sp1Desc": "Espagnol (natif), Anglais (courant), Français (apprentissage), Allemand (bientôt)",
+    "sp1Desc": "Espagnol, Anglais, Français (apprentissage), Allemand (bientôt)",
     "sp2Label": "Développement Full-Stack",
     "sp2Desc": "Construction d'applications web complètes avec des technologies modernes frontend et backend",
     "sp3Label": "Apprentissage par IA",
     "sp3Desc": "Utiliser l'IA comme catalyseur pour maîtriser rapidement de nouvelles technologies et résoudre des problèmes complexes",
     "sp4Label": "Résolution Créative",
     "sp4Desc": "Transformer des défis complexes en solutions élégantes et pratiques grâce à la pensée analytique",
-    "para1": "Avec plus de 5 ans d'expérience en développement logiciel, je transforme des idées en solutions numériques puissantes. Mon parcours va de la construction d'architectures backend évolutives à la création d'expériences frontend inmersives que les utilisateurs adorent.",
-    "para2": "Je crois que la technologie doit être à la fois puissante et belle. Chaque ligne de code est une opportunité de créer quelque chose qui non seulement fonctionne parfaitement, mais qui apporte aussi joie et intuition à ceux qui interagissent avec elle.",
-    "para3": "Actuellement, j'explore les frontières des graphiques 3D basés sur le web, des interfaces alimentées par l'IA et des expériences collaboratives en temps réel qui repoussent les limites du navigateur.",
-    "philosophy": "Le code est de la poésie en mouvement. Chaque fonction, composant et pixel est un coup de pinceau dans un chef-d'œuvre plus vaste d'artisanat numérique."
+    "para1": "Actuellement en sixième semestre de Génie Informatique, j'ai développé une base de connaissances en développement logiciel, bases de données et expériences interactives. Mon objectif est de construire des solutions efficaces, évolutives et visuellement attrayantes qui résolvent des problèmes réels.",
+    "para2": "Je crois que la technologie doit être puissante et belle, c'est pourquoi je m'appuie sur l'IA pour renforcer mes compétences et apprendre efficacement ce qui me passionne.",
+    "para3": "Actuellement, j'explore tout ce qui me permet d'apprendre et de m'améliorer dans tout ce qui touche à la technologie, comme l'IA, le développement logiciel, la conception de systèmes et les expériences interactives.",
+    "philosophy": "Tant que tu continues d'essayer, aucun échec ne sera définitif ; chacun sera une opportunité d'apprendre, de grandir et d'être meilleur qu'hier."
   },
   "skills": {
-    "title": "Expertise",
+    "title": "Expérience",
     "highlight": "technique",
-    "label": "Compétences",
-    "subtitle": "Une boîte à outils complète couvrant le frontend, le backend, les technologies créatives et l'infrastructure cloud."
+    "label": "Compétences"
   },
   "projects": {
     "label": "Projets",
     "title": "Travail",
     "highlight": "sélectionné",
-    "subtitle": "Une sélection de projets qui démontrent mon expertise dans la création d'expériences numériques performantes et visuellement captivantes.",
-    "problem": "Problème",
-    "result": "Résultat",
+    "subtitle": "Une sélection de projets qui montrent la création d'expériences numériques performantes et visuellement attrayantes.",
     "demo": "Démo en Direct",
     "repo": "Dépôt",
     "items": {
       "yomessage": {
         "title": "YoMessage",
-        "description": "Application de messagerie en temps réel avec une interface époustouflante et entièrement personnalisable. Construite avec React 19, Express 5, Socket.IO, MongoDB et Clerk Auth.",
-        "problem": "Les plateformes de messagerie existantes offrent une personnalisation limitée et manquent de fonctionnalités interactives comme la personnalisation de thèmes, le partage de médias et des expériences de chat immersives.",
-        "result": "Livré une plateforme de messagerie complète avec 27 thèmes, 16 fonds d'écran de chat, partage d'images/vidéos en temps réel, authentification Clerk et déploiement Docker."
+        "description": "Application de messagerie en temps réel avec une interface époustouflante et entièrement personnalisable. Construite avec React 19, Express 5, Socket.IO, MongoDB et Clerk Auth."
       },
-      "ethereal": {
-        "title": "Ethereal Space",
-        "description": "Plateforme de collaboration 3D immersive pour les équipes distantes avec environnements virtuels et interactions d'avatar en temps réel.",
-        "problem": "Les équipes distantes manquaient d'outils spatiaux engageants pour la collaboration créative.",
-        "result": "Adopté par plus de 15 équipes de conception, durée moyenne de session de 45 minutes, score NPS de 72."
+      "geminiclone": {
+        "title": "Google Gemini Clone",
+        "description": "Plateforme de collaboration 3D immersive pour les équipes distantes avec environnements virtuels et interactions d'avatar en temps réel."
       },
-      "violet": {
-        "title": "Violet Design System",
-        "description": "Bibliothèque de composants niveau entreprise alimentant 12 produits avec plus de 200 composants accessibles et personnalisables.",
-        "problem": "Une interface incohérente entre les produits entraînait 3x plus de temps de développement pour les nouvelles fonctionnalités.",
-        "result": "Réduit le temps de développement UI de 70%, maintenu 99.9% d'accessibilité, utilisé par plus de 80 ingénieurs."
+      "nexbitshop": {
+        "title": "Nexbit Shop",
+        "description": "Boutique en ligne de composants de niveau entreprise alimentant 12 produits avec plus de 200 composants accessibles et personnalisables."
       },
-      "wave": {
-        "title": "Wave Engine",
-        "description": "Environnement de codage créatif basé sur le web avec interface de programmation visuelle et aperçu en temps réel.",
-        "problem": "Aucun outil accessible dans le navigateur n'existait pour l'éducation au codage créatif.",
-        "result": "Plus de 50k utilisateurs actifs mensuels, présenté sur Product Hunt, note de 4.8/5."
+      "enterpriseai": {
+        "title": "Enterprise AI Application",
+        "description": "Environnement de codage créatif basé sur le web avec interface de programmation visuelle et aperçu en temps réel."
       }
     }
   },
@@ -81,7 +70,7 @@
     "items": {
       "systems-engineering": {
         "degree": "Génie Informatique",
-        "focus": "Génie Logiciel, Algorithmes, Structures de Données, Interaction Homme-Machine"
+        "focus": "Génie Logiciel, Algorithmes, Bases de Données, Interaction Homme-Machine"
       },
       "modern-languages": {
         "degree": "Langues Modernes",
@@ -91,9 +80,9 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Créons quelque chose",
-    "highlight": "d'incroyable",
-    "subtitle": "Vous avez un projet en tête ou vous souhaitez simplement échanger ? Je serais ravi de vous entendre. Construisons ensemble quelque chose d'extraordinaire.",
+    "title": "Créons quelque chose d'incroyable,",
+    "highlight": "j'adorerais apprendre et travailler avec vous.",
+    "subtitle": "Vous avez un projet en tête ou vous souhaitez simplement échanger ? Je serais ravi de vous entendre.",
     "findMe": "Retrouvez-moi sur",
     "name": "Nom",
     "email": "Email",

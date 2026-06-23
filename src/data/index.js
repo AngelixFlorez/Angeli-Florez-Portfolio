@@ -60,8 +60,8 @@ export const projects = [
     color: '#6366f1',
   },
   {
-    key: 'ethereal',
-    title: 'Ethereal Space',
+    key: 'geminiclone',
+    title: 'Google Gemini Clone',
     tech: ['Three.js', 'React Three Fiber', 'WebRTC', 'Node.js', 'PostgreSQL'],
     image: 'https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800&q=80',
     images: [
@@ -74,8 +74,8 @@ export const projects = [
     color: '#3b82f6',
   },
   {
-    key: 'violet',
-    title: 'Violet Design System',
+    key: 'nexbitshop',
+    title: 'Nexbit Shop',
     tech: ['React', 'TypeScript', 'Storybook', 'Radix UI', 'Tailwind'],
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
     images: [
@@ -88,8 +88,8 @@ export const projects = [
     color: '#7c3aed',
   },
   {
-    key: 'wave',
-    title: 'Wave Engine',
+    key: 'enterpriseai',
+    title: 'Enterprise AI Application',
     tech: ['React', 'Web Audio API', 'WebAssembly', 'Canvas', 'GSAP'],
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80',
     images: [

@@ -59,7 +59,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative" ref={ref}>
-      <div className="max-w-7xl mx-auto section-padding">
+      <div className="max-w-7xl mx-auto section-padding !py-12 md:!py-16 lg:!py-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

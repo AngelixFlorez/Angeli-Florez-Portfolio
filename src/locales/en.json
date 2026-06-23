@@ -10,68 +10,57 @@
   "hero": {
     "badge": "STUDENT",
     "career": "Systems Engineering",
-    "tagline": "If you can imagine it, you can create it. If you can learn it, you can achieve it",
+    "tagline": "If you can imagine it, you can create it. If you can learn it, you can achieve it.",
     "explore": "Explore My Work",
     "opportunities": "Available for opportunities",
     "contact": "Get in Touch"
   },
   "about": {
     "title": "About Me",
-    "label": "About",
-    "heading1": "Transforming ideas into",
-    "heading2": "digital reality",
+    "label": "About Me",
+    "heading1": "Transforming",
+    "heading2": "ideas",
     "sp1Label": "Languages",
-    "sp1Desc": "Spanish (native), English (fluent), French (learning), German (soon)",
+    "sp1Desc": "Spanish, English, French (learning), German (soon)",
     "sp2Label": "Full-Stack Development",
     "sp2Desc": "Building end-to-end web applications with modern frontend and backend technologies",
     "sp3Label": "AI-Powered Learning",
     "sp3Desc": "Using AI as a catalyst to quickly master new technologies and solve complex problems",
     "sp4Label": "Creative Problem Solving",
     "sp4Desc": "Turning complex challenges into elegant, practical solutions through analytical thinking",
-    "para1": "With over 5 years of experience in software development, I transform ideas into powerful digital solutions. My journey spans from building scalable backend architectures to crafting immersive frontend experiences that users love.",
-    "para2": "I believe technology should be both powerful and beautiful. Every line of code is an opportunity to create something that not only works flawlessly but also sparks joy and intuition in those who interact with it.",
-    "para3": "Currently exploring the frontiers of web-based 3D graphics, AI-powered interfaces, and real-time collaborative experiences that push the boundaries of what the browser can do.",
-    "philosophy": "Code is poetry in motion. Every function, component, and pixel is a brushstroke in a larger masterpiece of digital craftsmanship."
+    "para1": "Currently in my sixth semester of Systems Engineering, I have developed a foundation in software development, databases, and interactive experiences. My focus is on building efficient, scalable, and visually appealing solutions that solve real problems.",
+    "para2": "I believe technology should be powerful and beautiful, which is why I leverage AI to enhance my skills and efficiently learn what I am passionate about.",
+    "para3": "I am currently exploring everything that allows me to learn and improve in all technology-related fields, such as AI, software development, system design, and interactive experiences.",
+    "philosophy": "As long as you keep trying, no failure will be final; each one will be an opportunity to learn, grow and be better than yesterday."
   },
   "skills": {
-    "title": "Technical",
-    "highlight": "expertise",
-    "label": "Skills",
-    "subtitle": "A comprehensive toolkit spanning frontend, backend, creative technologies, and cloud infrastructure."
+    "title": "Experience",
+    "highlight": "technical",
+    "label": "Skills"
   },
   "projects": {
     "label": "Projects",
-    "title": "Selected",
-    "highlight": "work",
-    "subtitle": "A curated selection of projects that showcase my expertise in building high-performance, visually compelling digital experiences.",
-    "problem": "Problem",
-    "result": "Result",
+    "title": "Work",
+    "highlight": "selected",
+    "subtitle": "A selection of projects that showcase creating high-performance, visually appealing digital experiences.",
     "demo": "Live Demo",
     "repo": "Repository",
     "items": {
       "yomessage": {
         "title": "YoMessage",
-        "description": "Real-time messaging app with a stunning, fully customizable UI. Built with React 19, Express 5, Socket.IO, MongoDB, and Clerk Auth.",
-        "problem": "Existing messaging platforms offer limited customization and lack engaging real-time features like theme personalization, media sharing, and immersive chat experiences out of the box.",
-        "result": "Delivered a full-featured messaging platform with 27 theme presets, 16 chat wallpapers, real-time image/video sharing, secure Clerk authentication, and one-command Docker deployment."
+        "description": "Real-time messaging app with a stunning, fully customizable UI. Built with React 19, Express 5, Socket.IO, MongoDB, and Clerk Auth."
       },
-      "ethereal": {
-        "title": "Ethereal Space",
-        "description": "Immersive 3D collaboration platform for remote teams with virtual environments and real-time avatar interactions.",
-        "problem": "Remote teams lacked engaging spatial tools for creative collaboration.",
-        "result": "Adopted by 15+ design teams, average session duration of 45 minutes, NPS score of 72."
+      "geminiclone": {
+        "title": "Google Gemini Clone",
+        "description": "Immersive 3D collaboration platform for remote teams with virtual environments and real-time avatar interactions."
       },
-      "violet": {
-        "title": "Violet Design System",
-        "description": "Enterprise-grade component library powering 12 products with 200+ accessible, themeable components.",
-        "problem": "Inconsistent UI across products led to 3x development time for new features.",
-        "result": "Reduced UI development time by 70%, maintained 99.9% accessibility score, used by 80+ engineers."
+      "nexbitshop": {
+        "title": "Nexbit Shop",
+        "description": "Enterprise-level online component store powering 12 products with over 200 accessible and customizable components."
       },
-      "wave": {
-        "title": "Wave Engine",
-        "description": "Web-based creative coding environment with visual programming interface and real-time preview.",
-        "problem": "No accessible browser-based tool existed for creative coding education.",
-        "result": "50k+ monthly active users, featured on Product Hunt, 4.8/5 rating."
+      "enterpriseai": {
+        "title": "Enterprise AI Application",
+        "description": "Web-based creative coding environment with visual programming interface and real-time preview."
       }
     }
   },
@@ -81,7 +70,7 @@
     "items": {
       "systems-engineering": {
         "degree": "Systems Engineering",
-        "focus": "Software Engineering, Algorithms, Data Structures, Human-Computer Interaction"
+        "focus": "Software Engineering, Algorithms, Databases, Human-Computer Interaction"
       },
       "modern-languages": {
         "degree": "Modern Languages",
@@ -91,9 +80,9 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Let's create something",
-    "highlight": "amazing",
-    "subtitle": "Have a project in mind or just want to connect? I'd love to hear from you. Let's build something extraordinary together.",
+    "title": "Let's create something incredible,",
+    "highlight": "I would love to learn and work with you.",
+    "subtitle": "Do you have a project in mind or just want to connect? I would love to hear from you.",
     "findMe": "Find me on",
     "name": "Name",
     "email": "Email",

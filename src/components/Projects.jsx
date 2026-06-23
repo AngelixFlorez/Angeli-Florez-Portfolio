@@ -166,17 +166,6 @@ function ProjectModal({ project, onClose }) {
           <h3 className="text-2xl font-bold mb-3">{t('projects', 'items.' + project.key + '.title')}</h3>
           <p className="text-text-secondary mb-6 leading-relaxed">{t('projects', 'items.' + project.key + '.description')}</p>
 
-          <div className="space-y-4 mb-6">
-            <div>
-              <h4 className="text-xs font-mono text-text-muted uppercase tracking-wider mb-1">{t('projects', 'problem')}</h4>
-              <p className="text-sm text-text-secondary">{t('projects', 'items.' + project.key + '.problem')}</p>
-            </div>
-            <div>
-              <h4 className="text-xs font-mono text-text-muted uppercase tracking-wider mb-1">{t('projects', 'result')}</h4>
-              <p className="text-sm text-text-secondary">{t('projects', 'items.' + project.key + '.result')}</p>
-            </div>
-          </div>
-
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((t) => (
               <TechBadge key={t} name={t} size="md" />

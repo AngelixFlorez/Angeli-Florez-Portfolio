@@ -18,20 +18,20 @@
   "about": {
     "title": "Sobre Mí",
     "label": "Sobre Mí",
-    "heading1": "Transformando ideas",
-    "heading2": "Creando sueños",
+    "heading1": "Transformando",
+    "heading2": "ideas",
     "sp1Label": "Idiomas",
-    "sp1Desc": "Español (nativo), Inglés (fluido), Francés (aprendiendo), Alemán (pronto)",
+    "sp1Desc": "Español, Inglés, Francés (aprendiendo), Alemán (pronto)",
     "sp2Label": "Desarrollo Full-Stack",
     "sp2Desc": "Construyendo aplicaciones web completas con tecnologías modernas de frontend y backend",
     "sp3Label": "Aprendizaje con IA",
     "sp3Desc": "Usando la IA como catalizador para dominar nuevas tecnologías y resolver problemas complejos",
     "sp4Label": "Resolución Creativa",
     "sp4Desc": "Convirtiendo desafíos complejos en soluciones elegantes y prácticas mediante pensamiento analítico",
-    "para1": "Con 6 semestres de formación académica en Ingeniería de Sistemas, he desarrollado una conocimiento base en desarrollo de software, bases de datos y experiencias interactivas. Mi enfoque se centra en construir soluciones eficientes, escalables y visualmente atractivas que resuelvan problemas reales.",
-    "para2": "Creo que la tecnología debe ser poderosa y hermosa, por eso me apoyo con la IA, para potenciar mis habilidades y aprender aquello que me apasiona de manera eficiente.",
-    "para3": "Actualmente estoy explorando todo lo que me permita aprender y mejorar en todo lo relacionado con la tecnología, como la IA, el desarrollo de software, el diseño de sistemas y las experiencias interactivas.",
-    "philosophy": "Mientras sigas intentándolo, cada fracaso será una oportunidad para aprender y crecer. Y siempre se puede ser mejor."
+    "para1": "Actualmente cursando el sexto semestre de Ingeniería de Sistemas, he desarrollado una base de conocimientos en desarrollo de software, bases de datos y experiencias interactivas. Mi enfoque se centra en construir soluciones eficientes, escalables y visualmente atractivas que resuelvan problemas reales.",
+    "para2": "Creo que la tecnología debe ser poderosa y hermosa, por eso me apoyo en la IA, para potenciar mis habilidades y aprender aquello que me apasiona de manera eficiente.",
+    "para3": "Estoy explorando todo lo que me permita aprender y mejorar en todo lo relacionado con la tecnología, como la IA, el desarrollo de software, el diseño de sistemas y las experiencias interactivas.",
+    "philosophy": "Mientras sigas intentándolo, ningún fracaso será definitivo; cada uno será una oportunidad para aprender, crecer y ser mejor que ayer."
   },
   "skills": {
     "title": "Experiencia",
@@ -44,34 +44,24 @@
     "title": "Trabajo",
     "highlight": "seleccionado",
     "subtitle": "Una selección de proyectos que muestran la creación de experiencias digitales de alto rendimiento visualmente atractivas.",
-    "problem": "Problema",
-    "result": "Resultado",
     "demo": "Demo en Vivo",
     "repo": "Repositorio",
     "items": {
       "yomessage": {
         "title": "YoMessage",
-        "description": "App de mensajería en tiempo real con una interfaz impresionante y totalmente personalizable. Construida con React 19, Express 5, Socket.IO, MongoDB y Clerk Auth.",
-        "problem": "Las plataformas de mensajería existentes ofrecen personalización limitada y carecen de funciones interactivas como personalización de temas, compartir medios y experiencias de chat inmersivas.",
-        "result": "Se entregó una plataforma de mensajería completa con 27 temas, 16 fondos de chat, compartir imágenes/video en tiempo real, autenticación Clerk y despliegue con Docker."
+        "description": "App de mensajería en tiempo real con una interfaz impresionante y totalmente personalizable. Construida con React 19, Express 5, Socket.IO, MongoDB y Clerk Auth."
       },
-      "ethereal": {
-        "title": "Ethereal Space",
-        "description": "Plataforma de colaboración 3D inmersiva para equipos remotos con entornos virtuales e interacciones de avatar en tiempo real.",
-        "problem": "Los equipos remotos carecían de herramientas espaciales atractivas para la colaboración creativa.",
-        "result": "Adoptado por más de 15 equipos de diseño, duración promedio de sesión de 45 minutos, NPS de 72."
+      "geminiclone": {
+        "title": "Google Gemini Clone",
+        "description": "Plataforma de colaboración 3D inmersiva para equipos remotos con entornos virtuales e interacciones de avatar en tiempo real."
       },
-      "violet": {
-        "title": "Violet Design System",
-        "description": "Librería de componentes de nivel empresarial que impulsa 12 productos con más de 200 componentes accesibles y personalizables.",
-        "problem": "La interfaz inconsistente entre productos generaba 3x más tiempo de desarrollo para nuevas funcionalidades.",
-        "result": "Redujo el tiempo de desarrollo de UI en un 70%, mantuvo 99.9% de accesibilidad, usado por más de 80 ingenieros."
+      "nexbitshop": {
+        "title": "Nexbit Shop",
+        "description": "Tienda online de componentes de nivel empresarial que impulsa 12 productos con más de 200 componentes accesibles y personalizables."
       },
-      "wave": {
-        "title": "Wave Engine",
-        "description": "Entorno de codificación creativa basado en web con interfaz de programación visual y vista previa en tiempo real.",
-        "problem": "No existía una herramienta accesible en el navegador para la educación en codificación creativa.",
-        "result": "Más de 50k usuarios activos mensuales, destacado en Product Hunt, calificación de 4.8/5."
+      "enterpriseai": {
+        "title": "Enterprise AI Application",
+        "description": "Entorno de codificación creativa basado en web con interfaz de programación visual y vista previa en tiempo real."
       }
     }
   },
@@ -91,8 +81,8 @@
   },
   "contact": {
     "label": "Contacto",
-    "title": "Creemos algo increible,",
-    "highlight": "me encantaria aprender y trabajar contigo.",
+    "title": "Creemos algo increíble,",
+    "highlight": "me encantaría aprender y trabajar contigo.",
     "subtitle": "¿Tienes un proyecto en mente o solo quieres conectar? Me encantaría saber de ti.",
     "findMe": "Encuéntrame en",
     "name": "Nombre",
