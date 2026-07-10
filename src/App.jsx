@@ -90,6 +90,14 @@ function ScrollProgress() {
 
 export default function App() {
   const [loading, setLoading] = useState(true)
+  const [showGalaxy, setShowGalaxy] = useState(false)
+
+  useEffect(() => {
+    if (!loading) {
+      const timer = setTimeout(() => setShowGalaxy(true), 300)
+      return () => clearTimeout(timer)
+    }
+  }, [loading])
 
   return (
     <AppErrorBoundary>
@@ -106,18 +114,20 @@ export default function App() {
             className="min-h-screen"
           >
             <div className="fixed inset-0 pointer-events-none">
-              <Galaxy
-                density={0.6}
-                starSpeed={0.2}
-                glowIntensity={0.3}
-                hueShift={140}
-                saturation={0.2}
-                twinkleIntensity={0.4}
-                rotationSpeed={0.03}
-                mouseInteraction={false}
-                mouseRepulsion={false}
-                autoCenterRepulsion={0}
-              />
+              {showGalaxy && (
+                <Galaxy
+                  density={0.6}
+                  starSpeed={0.2}
+                  glowIntensity={0.3}
+                  hueShift={140}
+                  saturation={0.2}
+                  twinkleIntensity={0.4}
+                  rotationSpeed={0.03}
+                  mouseInteraction={false}
+                  mouseRepulsion={false}
+                  autoCenterRepulsion={0}
+                />
+              )}
             </div>
             <CursorFollower />
             <ScrollProgress />

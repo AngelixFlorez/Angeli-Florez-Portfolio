@@ -15,11 +15,11 @@ export default function LoadingScreen({ onComplete }) {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setProgress((p) => {
-        const next = Math.min(p + Math.random() * 4 + 1, 100)
+        const next = Math.min(p + Math.random() * 8 + 2, 100)
         if (next >= 100) clearInterval(intervalRef.current)
         return next
       })
-    }, 80)
+    }, 40)
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current)
