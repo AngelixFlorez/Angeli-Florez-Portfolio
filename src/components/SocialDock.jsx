@@ -41,6 +41,7 @@ export default function SocialDock() {
 
   return (
     <div className="flex items-center justify-center w-full py-4 pointer-events-auto">
+      <div className="relative rounded-2xl p-1 bg-gradient-to-b from-white/5 to-transparent border border-white/10">
         <motion.div
           animate={{ y: [0, -2, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
@@ -110,7 +111,8 @@ export default function SocialDock() {
             </div>
           )
         })}
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   )
 }
