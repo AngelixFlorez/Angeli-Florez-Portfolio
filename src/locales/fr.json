@@ -50,17 +50,17 @@
         "title": "YoMessage",
         "description": "Application de messagerie en temps réel avec une interface époustouflante et entièrement personnalisable. Construite avec React 19, Express 5, Socket.IO, MongoDB et Clerk Auth."
       },
+      "panmac": {
+        "title": "PanMac",
+        "description": "E-commerce artisanal pour une boulangerie inspirée de l'univers arcade avec chat en temps réel, appels vidéo, panneau d'administration et paiements Polar."
+      },
       "geminiclone": {
-        "title": "Google Gemini Clone",
-        "description": "Plateforme de collaboration 3D immersive pour les équipes distantes avec environnements virtuels et interactions d'avatar en temps réel."
+        "title": "Gemini Clone",
+        "description": "Clone de Google Gemini basé sur le web avec chat IA, gestion multi-conversations, saisie vocale et réponses en streaming."
       },
-      "nexbitshop": {
-        "title": "Nexbit Shop",
-        "description": "Boutique en ligne de composants de niveau entreprise alimentant 12 produits avec plus de 200 composants accessibles et personnalisables."
-      },
-      "enterpriseai": {
-        "title": "Enterprise AI Application",
-        "description": "Environnement de codage créatif basé sur le web avec interface de programmation visuelle et aperçu en temps réel."
+      "bloggeo": {
+        "title": "Bloggeo",
+        "description": "Plateforme de blog complète avec éditeur de texte enrichi, interactions sociales, catégories, tags et authentification JWT."
       }
     }
   },

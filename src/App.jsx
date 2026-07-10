@@ -49,7 +49,7 @@ function CursorFollower() {
             damping: 15,
             mass: 0.5,
           }}
-          className="fixed pointer-events-none z-[200] mix-blend-difference top-0 left-0"
+          className="fixed pointer-events-none z-200 mix-blend-difference top-0 left-0"
           aria-hidden="true"
         >
           <div className="w-8 h-8 rounded-full bg-white/90 shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
@@ -80,10 +80,10 @@ function ScrollProgress() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-[3px] z-[100] origin-left"
+      className="fixed top-0 left-0 right-0 h-3px z-100 origin-left"
       style={{ scaleX: progress }}
     >
-      <div className="h-full bg-gradient-to-r from-primary via-accent to-primary shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
+      <div className="h-full bg-linear-to-r from-primary via-accent to-primary shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
     </motion.div>
   )
 }

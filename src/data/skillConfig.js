@@ -181,4 +181,25 @@ export const skillConfig = {
     hoverBorderColor: 'rgba(108,71,255,0.6)',
     logoSrc: 'https://cdn.simpleicons.org/clerk'
   },
+  'Java': {
+    color: '#ED8B00',
+    bgColor: 'rgba(237,139,0,0.1)',
+    borderColor: 'rgba(237,139,0,0.3)',
+    hoverBorderColor: 'rgba(237,139,0,0.6)',
+    logoSrc: 'https://cdn.simpleicons.org/openjdk'
+  },
+  'Spring Boot': {
+    color: '#6DB33F',
+    bgColor: 'rgba(109,179,63,0.1)',
+    borderColor: 'rgba(109,179,63,0.3)',
+    hoverBorderColor: 'rgba(109,179,63,0.6)',
+    logoSrc: 'https://cdn.simpleicons.org/springboot'
+  },
+  'Vite': {
+    color: '#646CFF',
+    bgColor: 'rgba(100,108,255,0.1)',
+    borderColor: 'rgba(100,108,255,0.3)',
+    hoverBorderColor: 'rgba(100,108,255,0.6)',
+    logoSrc: 'https://cdn.simpleicons.org/vite'
+  },
 }

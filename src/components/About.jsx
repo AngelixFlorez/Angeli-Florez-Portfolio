@@ -65,7 +65,7 @@ export default function About() {
               whileHover={{ scale: 1.02, boxShadow: '0 0 30px rgba(168,85,247,0.1)' }}
               className="mt-10 p-8 rounded-2xl glass-card relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <motion.p
                 className="text-base text-text-muted italic leading-relaxed relative z-10"
                 animate={{ opacity: [0.7, 1, 0.7] }}
@@ -88,7 +88,7 @@ export default function About() {
                   whileHover={{ y: -8, scale: 1.05, boxShadow: `0 10px 40px -10px ${item.color}50` }}
                   className="group p-8 rounded-2xl glass-card hover:border-primary/40 transition-all duration-500 relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-linear-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <motion.div
                     className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 shadow-lg relative z-10"
                     style={{ backgroundColor: `${item.color}15`, border: `1px solid ${item.color}30` }}
